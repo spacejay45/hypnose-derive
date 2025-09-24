@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>École d’Hypnose Trans-Intergalactique — Officiellement officieuse</title>
+  <meta name="description" content="Traversez les galaxies intérieures grâce à l’hypnose Trans-Intergalactique. Une parodie pour dénoncer les dérives pseudo-scientifiques en hypnose." />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root{
+      --bg:#0d021a; --fg:#e5e1ff; --muted:#a58bbf; 
+      --accent:#ff6bcb; --accent2:#3df5ff; --danger:#ff4d4d;
+      --card:#1a0d2d; --line:#331f47; --shadow:0 10px 30px rgba(0,0,0,.5);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; padding:0; background:radial-gradient(1600px 800px at 50% -20%, #2a0a44 0%, #0d021a 70%); color:var(--fg); font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; line-height:1.6}
+    a{color:var(--accent); text-decoration:none}
+    header{position:sticky; top:0; z-index:50; background:rgba(13,2,26,.7); backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line)}
+    .wrap{max-width:1080px; margin:0 auto; padding:0 20px}
+    nav{display:flex; align-items:center; gap:20px; height:64px}
+    nav .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px}
+    .brand svg{width:28px; height:28px}
+    nav .spacer{flex:1}
+    nav a{font-weight:600; color:var(--fg); opacity:.9}
+    nav a:hover{opacity:1}
+
+    .hero{position:relative; padding:96px 0 72px; overflow:hidden; border-top:1px solid var(--line)}
+    .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:40px}
+    .badge{display:inline-flex; align-items:center; gap:10px; padding:6px 10px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:#fff; background:linear-gradient(180deg,#2a0a44 0%, #180028 100%)}
+    h1{font-size:48px; line-height:1.1; margin:.4em 0 .2em}
+    .lead{font-size:18px; color:#cdb8e6}
+    .cta{display:flex; gap:12px; margin-top:24px; flex-wrap:wrap}
+    .btn{appearance:none; border:none; cursor:pointer; font-weight:800; padding:14px 18px; border-radius:12px}
+    .btn.primary{background:linear-gradient(180deg,#ff8adf,#ff6bcb); color:#2a0019}
+    .btn.ghost{background:transparent; color:var(--fg); border:1px solid var(--line)}
+    .card{background:linear-gradient(180deg,#201034 0%, #150024 100%); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:var(--shadow)}
+    img{max-width:100%; border-radius:14px; box-shadow:var(--shadow)}
+    .stamp{position:absolute; top:28px; right:-18px; transform:rotate(12deg); border:2px dashed var(--danger); color:var(--danger); padding:8px 12px; font-weight:900; letter-spacing:.1em; background:#2a0a1a}
+
+    section{padding:64px 0; border-top:1px solid var(--line)}
+    h2{font-size:28px; margin:0 0 12px}
+    .muted{color:var(--muted)}
+
+    .columns{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .modules{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+    .testi{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .price{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+
+    .timeline{position:relative; margin-top:28px}
+    .timeline:before{content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:linear-gradient(var(--accent),transparent)}
+    .stage{margin-left:28px; padding-left:16px; border-left:2px solid var(--line)}
+
+    .faq details{background:#1a0d2d; border:1px solid var(--line); border-radius:12px; padding:12px 16px}
+    .faq details+details{margin-top:10px}
+
+    footer{padding:36px 0 80px; color:#a58bbf; text-align:center}
+    .socials{display:flex; justify-content:center; gap:12px; margin-top:16px}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .columns, .modules, .testi, .price{grid-template-columns:1fr}
+      .stamp{position:static; transform:none; display:inline-block; margin-top:10px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Bandeau annonce -->
+  <div style="background:var(--danger);color:#fff;text-align:center;padding:6px 12px;font-weight:700;">
+    🚀 Nouveau délire intergalactique en préparation… restez à l’écoute du cosmos !
+  </div>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="url(#g)" stroke-width="2"/>
+            <path d="M32 4L32 60M4 32L60 32" stroke="#3df5ff" opacity=".6"/>
+            <defs>
+              <linearGradient id="g" x1="0" x2="64" y1="0" y2="64">
+                <stop stop-color="#ff6bcb"/>
+                <stop offset="1" stop-color="#3df5ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Hypnose Trans-Intergalactique</span>
+        </div>
+        <div class="spacer"></div>
+        <a href="#apprentissages">Check-list</a>
+        <a href="#programme">Programme</a>
+        <a href="#pedagogie">Pédagogie</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#inscription" class="btn ghost" style="padding:8px 12px">Inscription</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap grid">
+        <div>
+          <span class="badge">🪐 PARODIE • SATIRE — Fédération Cosmique des Consciences Éveillées</span>
+          <div class="stamp">PARODIE • SATIRE</div>
+          <h1>Traversez les galaxies intérieures.<br/>Hypnotisez-vous à la vitesse de la lumière.</h1>
+          <p class="lead">L’Hypnose Trans-Intergalactique promet (avec ironie) de synchroniser votre inconscient avec les <strong>civilisations stellaires</strong> grâce à des vortex quantiques et des chants de baleines cosmiques.</p>
+          <div class="cta">
+            <a href="#inscription" class="btn primary">Décoller (avec dérision)</a>
+            <a href="#programme" class="btn ghost">Voir le programme</a>
+          </div>
+        </div>
+        <aside>
+          <img src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=1400&q=80" alt="Vue intergalactique de l'espace avec nébuleuses colorées">
+        </aside>
+      </div>
+    </section>
+
+    <!-- CHECK-LIST -->
+    <section id="apprentissages">
+      <div class="wrap">
+        <h2>Ce que vous allez (prétendre) maîtriser</h2>
+        <div class="card">
+          <ul>
+            <li>Alignement du <b>chakra hyperdrive</b> avec Orion</li>
+            <li>Décodage du <b>langage télépathique des Pléiades</b></li>
+            <li>Connexion au <b>Wi-Fi cosmique</b> sans abonnement</li>
+            <li>Navigation par <b>trous de ver hypnotiques</b></li>
+            <li>Certification en <b>postures zéro-gravité</b></li>
+          </ul>
+          <p class="muted">Note sérieuse : ce site est une parodie destinée à dénoncer les dérives pseudo-scientifiques en hypnose. Gardez vos pieds sur Terre 🌍.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMME -->
+    <section id="programme">
+      <div class="wrap">
+        <h2>Programme « Hyperespace 9D »</h2>
+        <p class="muted">6 modules + un rituel sceptique orbital.</p>
+        <div class="modules" style="margin-top:14px">
+          <div class="card"><h3>Module 1</h3><p>Astro-induction par chants stellaires.</p></div>
+          <div class="card"><h3>Module 2</h3><p>Techniques de lévitation imaginaire certifiées NASA* (*ou pas).</p></div>
+          <div class="card"><h3>Module 3</h3><p>Activation du champ aurique tachyonique.</p></div>
+          <div class="card"><h3>Module 4</h3><p>Méditation zéro-gravité pour cerveaux flottants.</p></div>
+          <div class="card"><h3>Module 5</h3><p>Transmission quantique inter-espèces (y compris poulpes cosmiques).</p></div>
+          <div class="card"><h3>Module 6</h3><p>Déconstruction humoristique des croyances interstellaires.</p></div>
+        </div>
+        <div class="timeline">
+          <h3>Parcours express</h3>
+          <div class="stage"><p><b>Jour 1 :</b> Simulation de décollage hypnotique.</p></div>
+          <div class="stage"><p><b>Jour 2 :</b> Voyage métaphorique entre deux nébuleuses PowerPoint.</p></div>
+          <div class="stage"><p><b>Jour 3 :</b> Rituel sceptique : atterrissage forcé sur la planète Réalité.</p></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1602212096437-d0af1ce0553e?auto=format&fit=crop&w=700&q=40" alt="Astronaute flottant dans l’espace" style="margin-top:28px">
+      </div>
+    </section>
+
+    <!-- PÉDAGOGIE -->
+    <section id="pedagogie">
+      <div class="wrap">
+        <h2>Notre pédagogie cosmique</h2>
+        <div class="columns">
+          <div class="card"><h3>Voir — Rire — Comprendre</h3><p>On démonte les récits interstellaires, on rit des excès, puis on revient à une pratique d’hypnose ancrée.</p></div>
+          <div class="card"><h3>Clarté orbitale</h3><p>On distingue la science-fiction du réel, et on montre comment le charisme peut remplacer la preuve.</p></div>
+          <div class="card"><h3>Kit anti-bullshit</h3><p>Repères critiques, pretalk responsables, exercices d’ancrage terrestre.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section id="temoignages">
+      <div class="wrap">
+        <h2>Témoignages extraterrestres</h2>
+        <div class="testi">
+          <div class="card"><p>« Depuis ma formation, je communique avec Saturne en morse. »</p><b>— Zorg-Amélie</b></div>
+          <div class="card"><p>« J’ai fait une transe en apesanteur : mon chat m’a jugé. »</p><b>— Capitaine Félix</b></div>
+          <div class="card"><p>« Je me suis rendu compte que les vraies étoiles sont dans nos yeux. »</p><b>— Stella-Luc</b></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1708113457273-13c24aa3c220?auto=format&fit=crop&w=700&q=40" alt="Voie lactée spectaculaire dans le ciel nocturne" style="margin-top:28px">
+      </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section id="tarifs">
+      <div class="wrap">
+        <h2>Tarifs & certifications stellaires</h2>
+        <p class="muted">Tous nos prix incluent un ticket pour la navette imaginaire.</p>
+        <div class="price">
+          <div class="card"><h3>Initiation</h3><p>59€</p><ul><li>Conférence orbitale</li><li>Script « induction cosmique »</li></ul></div>
+          <div class="card"><h3>Praticien</h3><p>259€</p><ul><li>Programme complet</li><li>Atelier télépathie galactique</li></ul></div>
+          <div class="card"><h3>Maître Galactique</h3><p>1337€</p><ul><li>Téléportation imaginaire</li><li>Badge « Élu des étoiles »</li></ul></div>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <h3>Certification symbolique</h3>
+          <p>Entrez votre nom pour générer votre diplôme de « Navigateur Hypnotique Intergalactique » :</p>
+          <form onsubmit="event.preventDefault(); makeDiploma();">
+            <input id="name" placeholder="Votre Nom" style="background:#0a0022; border:1px solid var(--line); color:var(--fg); padding:10px 12px; border-radius:8px; width:220px" />
+            <button class="btn primary" type="submit">Générer le diplôme</button>
+          </form>
+        </div>
+        <img src="https://images.unsplash.com/photo-1711991997518-5fe30fcf8a07?auto=format&fit=crop&w=1400&q=80" alt="Galaxie spirale lointaine" style="margin-top:28px">
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details><summary>Est-ce que je vais vraiment voyager dans l’espace ?</summary><p>Seulement dans votre imagination (et c’est déjà pas mal).</p></details>
+          <details><summary>Pourquoi mélanger hypnose et galaxies ?</summary><p>Parce que ça impressionne, mais ça ne prouve rien.</p></details>
+          <details><summary>C’est une vraie école ?</summary><p>Non. C’est une <b>parodie</b> pour éveiller l’esprit critique.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE -->
+    <section id="inscription">
+      <div class="wrap">
+        <h2>Inscription</h2>
+        <div class="card">
+          <form onsubmit="event.preventDefault(); fakeSubmit();">
+            <label>Nom<input required placeholder="Votre nom"></label>
+            <label>Email<input type="email" required placeholder="vous@exemple.fr"></label>
+            <label>Message<textarea rows="4" placeholder="Je veux rejoindre la flotte intergalactique…"></textarea></label>
+            <div class="cta"><button class="btn primary" type="submit">Envoyer</button></div>
+          </form>
+        </div>
+        <p style="text-align:center;margin-top:20px">👉 Pour une vraie formation sérieuse, visitez <a href="https://www.academie-epione.com/" target="_blank">l’Académie Épione</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© École d’Hypnose Trans-Intergalactique — Une satire pour protéger les pratiques sérieuses.</p>
+    <div class="socials">
+      <a href="https://twitter.com/intent/tweet?text=Hypnose%20Trans-Intergalactique%20(parodie)!&url=https://www.academie-epione.com/" target="_blank" class="btn ghost">Twitter/X</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.academie-epione.com/" target="_blank" class="btn ghost">Facebook</a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.academie-epione.com/&title=Hypnose%20Trans-Intergalactique%20-%20Parodie" target="_blank" class="btn ghost">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    function makeDiploma(){
+      const who = (document.getElementById('name')?.value || 'Explorateur·trice Galactique').toUpperCase();
+      const w = window.open('', 'diploma', 'width=900,height=620');
+      const html = `<!doctype html><html><head><meta charset="utf-8"><title>Diplôme Intergalactique</title>
+        <style>body{margin:0; background:#000;} .wrap{margin:30px auto; max-width:900px; padding:24px; background:#150024; color:#e5e1ff; font-family:Georgia, serif; border:2px solid #ff6bcb; box-shadow:0 20px 60px rgba(0,0,0,.7)}
+        h1{font-size:42px; text-align:center; margin:.2em 0} h2{text-align:center; font-weight:normal; color:#3df5ff}
+        .seal{position:absolute; right:40px; top:40px; border:4px double #ff6bcb; padding:18px 22px; transform:rotate(8deg); font-weight:900}
+        .star{width:120px; height:120px; margin:0 auto; border:3px solid #3df5ff; border-radius:50%; background:#111; position:relative}
+        .name{font-size:32px; text-align:center; letter-spacing:2px; margin:8px 0 18px}
+        .small{color:#a58bbf; text-align:center}
+        .sign{display:flex; justify-content:space-between; margin-top:40px; color:#a58bbf}
+        button{margin:20px auto; display:block; padding:10px 16px}
+        </style></head><body><div class="wrap">
+        <div class="seal">PARODIE</div>
+        <div class="star"></div>
+        <h1>Diplôme de Navigateur·trice<br> en Hypnose Trans-Intergalactique</h1>
+        <div class="name">${who}</div>
+        <p class="small">a franchi avec humour les trous de ver des pseudo-sciences.</p>
+        <div class="sign"><span>Capitaine Auto-proclamé</span><span>Conseil des Pléiades</span></div>
+        <button onclick="print()">Imprimer</button>
+      </div></body></html>`;
+      w.document.write(html); w.document.close();
+    }
+    function fakeSubmit(){
+      alert('Merci ! Votre demande a été transmise à la Fédération Cosmique Imaginaire 🚀.');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>École d’Hypnose Chamanico-Cybernétique — Totems binaires et QR spirituels</title>
+  <meta name="description" content="Voyage intérieur guidé par un tambour binaire (1 et 0), permettant de rencontrer votre totem digital (un QR code spirituel). Une parodie pour exercer l’esprit critique." />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root{
+      --bg:#faf6f0; --fg:#1a1a1a; --muted:#5a5a5a;
+      --accent:#00bfa6; --accent2:#ff4081; --danger:#d32f2f;
+      --card:#ffffff; --line:#dcdcdc; --shadow:0 6px 20px rgba(0,0,0,.15);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; padding:0; background:var(--bg); color:var(--fg); font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; line-height:1.6}
+    a{color:var(--accent); text-decoration:none}
+    header{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--line); box-shadow:var(--shadow)}
+    .wrap{max-width:1080px; margin:0 auto; padding:0 20px}
+    nav{display:flex; align-items:center; gap:20px; height:64px}
+    nav .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px; color:var(--accent2)}
+    .brand svg{width:28px; height:28px}
+    nav .spacer{flex:1}
+    nav a{font-weight:600; color:var(--fg); opacity:.8}
+    nav a:hover{opacity:1}
+
+    /* Hero */
+    .hero{position:relative; padding:96px 0 72px; overflow:hidden; border-top:1px solid var(--line); background:linear-gradient(180deg,#f0f9f7,#faf6f0)}
+    .grid{display:grid; grid-template-columns:1.2fr .8fr; gap:40px}
+    .badge{display:inline-flex; align-items:center; gap:10px; padding:6px 10px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--accent2); background:#fff}
+    h1{font-size:48px; line-height:1.1; margin:.4em 0 .2em; color:var(--accent2)}
+    .lead{font-size:18px; color:var(--muted)}
+    .cta{display:flex; gap:12px; margin-top:24px; flex-wrap:wrap}
+    .btn{appearance:none; border:none; cursor:pointer; font-weight:800; padding:14px 18px; border-radius:12px}
+    .btn.primary{background:var(--accent2); color:#fff}
+    .btn.ghost{background:transparent; color:var(--accent2); border:2px solid var(--accent2)}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:var(--shadow)}
+    img{max-width:100%; border-radius:14px; box-shadow:var(--shadow)}
+    .stamp{position:absolute; top:20px; right:20px; transform:rotate(-10deg); border:2px dashed var(--danger); color:#fff; background:var(--danger); padding:8px 14px; font-weight:900; letter-spacing:.08em; z-index:1000}
+
+    /* Sections */
+    section{padding:64px 0; border-top:1px solid var(--line)}
+    h2{font-size:28px; margin:0 0 12px; color:var(--accent)}
+    .muted{color:var(--muted)}
+
+    /* Layouts */
+    .columns{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .modules{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+    .testi{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .price{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+
+    /* Timeline */
+    .timeline{position:relative; margin-top:28px}
+    .timeline:before{content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:linear-gradient(var(--accent),transparent)}
+    .stage{margin-left:28px; padding-left:16px; border-left:2px solid var(--line)}
+
+    /* FAQ */
+    .faq details{background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px 16px}
+    .faq details+details{margin-top:10px}
+
+    /* Footer */
+    footer{padding:36px 0 80px; color:var(--muted); text-align:center; background:#fff; border-top:1px solid var(--line)}
+    .socials{display:flex; justify-content:center; gap:12px; margin-top:16px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .columns, .modules, .testi, .price{grid-template-columns:1fr}
+      .stamp{position:static; transform:none; display:inline-block; margin-top:10px}
+    }
+  </style>
+</head>
+<body>
+  <!-- Bandeau annonce -->
+  <div style="background:var(--accent2);color:#fff;text-align:center;padding:6px 12px;font-weight:700;">
+    🥁 Nouveau rituel digital en préparation… branchez vos esprits bientôt !
+  </div>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="var(--accent2)" stroke-width="3"/>
+            <path d="M16 32h32M32 16v32" stroke="var(--accent)" stroke-width="3"/>
+          </svg>
+          <span>Hypnose Chamanico-Cybernétique</span>
+        </div>
+        <div class="spacer"></div>
+        <a href="#apprentissages">Check-list</a>
+        <a href="#programme">Programme</a>
+        <a href="#pedagogie">Pédagogie</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#inscription" class="btn ghost" style="padding:8px 12px">Inscription</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap grid">
+        <div>
+          <span class="badge">🪶 PARODIE • SATIRE — Ordre du Totem Numérique</span>
+          <h1>Connectez-vous au <em>QR Totem</em><br/>par le tambour binaire</h1>
+          <p class="lead">Une méthode parodique qui prétend unir traditions chamaniques et réseaux Wi-Fi intérieurs. 1, 0, 1, 0… et vous voilà face à votre totem digital.</p>
+          <div class="cta">
+            <a href="#inscription" class="btn primary">Rencontrer son QR spirituel</a>
+            <a href="#programme" class="btn ghost">Découvrir le programme</a>
+          </div>
+        </div>
+        <aside>
+          <img src="https://hypnoseorleans.fr/wp-content/uploads/2025/09/Generated-Image-September-16-2025-1_14PM.jpg?auto=format&fit=crop&w=1400&q=80" alt="Tambour chamanique futuriste avec circuits électroniques">
+        </aside>
+      </div>
+      <div class="stamp">PARODIE • SATIRE</div>
+    </section>
+
+    <!-- CHECK-LIST -->
+    <section id="apprentissages">
+      <div class="wrap">
+        <h2>Ce que vous allez (prétendre) maîtriser</h2>
+        <div class="card">
+          <ul>
+            <li>Voyager en transe grâce au <b>tambour binaire</b> (1 et 0)</li>
+            <li>Rencontrer votre <b>totem digital</b> en forme de QR code</li>
+            <li>Décrypter le langage des <b>esprits cybernétiques</b></li>
+            <li>Équilibrer vos chakras grâce à un <b>algorithme ancestral</b></li>
+            <li>Recevoir la <b>certification en esprit critique</b></li>
+          </ul>
+          <p class="muted" style="margin-top:8px">⚠️ Ceci est une parodie. Le vrai apprentissage : garder l’esprit critique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMME -->
+    <section id="programme">
+      <div class="wrap">
+        <h2>Programme « Totem Digital »</h2>
+        <div class="modules" style="margin-top:14px">
+          <div class="card"><h3>Module 1</h3><p>Tambour binaire : introduction au rythme 1/0.</p></div>
+          <div class="card"><h3>Module 2</h3><p>Rencontre guidée avec votre QR spirituel.</p></div>
+          <div class="card"><h3>Module 3</h3><p>Totems de silicium et visions holographiques.</p></div>
+          <div class="card"><h3>Module 4</h3><p>Soutenance rituelle avec incantations Wi-Fi.</p></div>
+          <div class="card"><h3>Module 5</h3><p>Décryptage du code sacré ASCII ancestral.</p></div>
+          <div class="card"><h3>Module 6</h3><p>Scepticisme : pourquoi rire des dérives aide.</p></div>
+        </div>
+
+        <div class="timeline">
+          <h3>Voyage en 3 étapes</h3>
+          <div class="stage"><p><b>Jour 1 :</b> Fabrication d’un tambour binaire avec Arduino.</p></div>
+          <div class="stage"><p><b>Jour 2 :</b> Scan collectif des QR totémiques en transe.</p></div>
+          <div class="stage"><p><b>Jour 3 :</b> Rituel critique : on garde l’humour et on démonte le reste.</p></div>
+        </div>
+
+        <img src="https://hypnoseorleans.fr/wp-content/uploads/2025/09/Generated-Image-September-16-2025-1_17PM.jpg?auto=format&fit=crop&w=1400&q=80" alt="Masque tribal mêlé à des circuits imprimés" style="margin-top:28px">
+      </div>
+    </section>
+
+    <!-- PÉDAGOGIE -->
+    <section id="pedagogie">
+      <div class="wrap">
+        <h2>Notre pédagogie</h2>
+        <div class="columns">
+          <div class="card"><h3>Rire et comprendre</h3><p>On décortique les discours pseudo-scientifiques, on en rit et on montre pourquoi l’hypnose sérieuse n’en a pas besoin.</p></div>
+          <div class="card"><h3>Clarté radicale</h3><p>On sépare traditions réelles, techno imaginaire et illusions marketing.</p></div>
+          <div class="card"><h3>Outils pratiques</h3><p>Check-lists anti-bullshit, pretalk éthiques et critères sérieux.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section id="temoignages">
+      <div class="wrap">
+        <h2>Témoignages irréfutables</h2>
+        <div class="testi">
+          <div class="card"><p>« Mon QR Totem s’est animé et m’a révélé mon mot de passe oublié de 2003. »</p><b>— Neo-Ancestral</b></div>
+          <div class="card"><p>« J’ai dansé 3 heures sur du binaire. J’ai vu Windows 95 en vision sacrée. »</p><b>— Oracle.exe</b></div>
+          <div class="card"><p>« J’ai compris que le vrai pouvoir, c’est d’apprendre à douter. »</p><b>— Chaman-404</b></div>
+        </div>
+        <img src="https://hypnoseorleans.fr/wp-content/uploads/2025/09/Generated-Image-September-16-2025-1_19PM.jpg?auto=format&fit=crop&w=70&q=40" alt="Vision mystique avec motifs binaires" style="margin-top:28px">
+      </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section id="tarifs">
+      <div class="wrap">
+        <h2>Tarifs & Certifications</h2>
+        <p class="muted">Tous incluent un autocollant « Techno-Esprit non homologué ».</p>
+        <div class="price" style="margin-top:14px">
+          <div class="card"><h3>Initiation</h3><p>49€</p><ul><li>Conférence (2h)</li><li>Tambour binaire PDF</li></ul></div>
+          <div class="card"><h3>Praticien Digital</h3><p>199€</p><ul><li>Programme complet</li><li>Rencontre QR spirituel</li><li>Diplôme auto-généré</li></ul></div>
+          <div class="card"><h3>Grand Totem</h3><p>999€</p><ul><li>Totem en silicium</li><li>Badge « Très connecté »</li><li>Mentorat critique</li></ul></div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Certification symbolique</h3>
+          <form onsubmit="event.preventDefault(); makeDiploma();">
+            <input id="name" placeholder="Votre Nom" style="padding:10px; border:1px solid var(--line); border-radius:8px; width:220px" />
+            <button class="btn primary" type="submit">Générer le diplôme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details><summary>Est-ce une vraie école ?</summary><p>Non. C’est une <b>parodie</b>.</p></details>
+          <details><summary>Pourquoi mélanger chamanisme et cybernétique ?</summary><p>Parce que ça sonne mystérieux et vendeur… mais pas sérieux.</p></details>
+          <details><summary>Que garde-t-on vraiment ?</summary><p>L’humour, l’esprit critique, et les bases de l’hypnose validée.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE -->
+    <section id="inscription">
+      <div class="wrap">
+        <h2>Inscription</h2>
+        <div class="card">
+          <form onsubmit="event.preventDefault(); fakeSubmit();">
+            <label>Nom<input required placeholder="Votre nom" style="width:100%; margin-top:4px"></label>
+            <label>Email<input type="email" required placeholder="vous@exemple.fr" style="width:100%; margin-top:4px"></label>
+            <label>Message<textarea rows="4" placeholder="Je veux scanner mon QR spirituel…" style="width:100%; margin-top:4px"></textarea></label>
+            <div class="cta"><button class="btn primary" type="submit">Envoyer</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- VRAIE ÉCOLE -->
+    <section id="ecole">
+      <div class="wrap">
+        <div class="card">
+          <h3>Notre (vraie) école</h3>
+          <p>Envie d’une formation sérieuse et éthique ? Découvrez l’Académie Épione :</p>
+          <p><a class="btn primary" href="https://www.academie-epione.com/" target="_blank">academie-epione.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© École d’Hypnose Chamanico-Cybernétique — <i>Une satire pour protéger les pratiques sérieuses</i>.</p>
+      <div class="socials">
+        <a href="https://twitter.com/intent/tweet?text=Hypnose%20Chamanico-Cybernétique%20(parodie)!&url=https://spacejay45.github.io/hypnose-derive/" target="_blank" class="btn ghost">Twitter/X</a>
+        <a href="https://www.facebook.com/sharer.php?u=https://spacejay45.github.io/hypnose-derive/" target="_blank" class="btn ghost">Facebook</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://spacejay45.github.io/hypnose-derive/&title=Hypnose%20Chamanico-Cybernétique%20-%20Parodie" target="_blank" class="btn ghost">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function fakeSubmit(){
+      alert("Merci ! Votre demande a été transmise aux esprits binaires.");
+    }
+    function makeDiploma(){
+      const name=document.getElementById("name").value||"Anonyme";
+      const w=window.open("","","width=600,height=400");
+      w.document.write("<h1>Diplôme Officiel</h1>");
+      w.document.write("<p>Ce diplôme certifie que <b>"+name+"</b> a rencontré son Totem Digital (QR spirituel).</p>");
+      w.document.write("<p style='margin-top:20px'>⚠️ Ceci est une parodie.</p>");
+    }
+  </script>
+</body>
+</html>
