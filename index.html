@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Défunt Subliminal - La Méthode Révolutionnaire</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --cosmic-purple: #6B46C1;
+            --mystic-gold: #FFD700;
+            --ethereal-cyan: #00CED1;
+            --ghost-white: #F8F8FF;
+            --smoke-gray: #2D3748;
+            --warning-red: #E53E3E;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: var(--ghost-white);
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Animation de fumée en arrière-plan */
+        @keyframes smoke {
+            0% { opacity: 0.1; transform: translateY(100%) scale(1); }
+            50% { opacity: 0.3; }
+            100% { opacity: 0; transform: translateY(-100%) scale(1.5); }
+        }
+        
+        .smoke-effect {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: smoke 8s infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .smoke-1 { left: 10%; animation-delay: 0s; }
+        .smoke-2 { left: 30%; animation-delay: 2s; }
+        .smoke-3 { left: 50%; animation-delay: 4s; }
+        .smoke-4 { left: 70%; animation-delay: 6s; }
+        .smoke-5 { left: 90%; animation-delay: 1s; }
+        
+        /* Étoiles scintillantes */
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+        
+        /* Container principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Header spectaculaire */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.9) 0%, rgba(139, 0, 139, 0.8) 100%);
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3);
+            border: 3px solid var(--mystic-gold);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 20px var(--mystic-gold), 0 0 40px var(--mystic-gold); }
+            50% { text-shadow: 0 0 30px var(--ethereal-cyan), 0 0 60px var(--ethereal-cyan); }
+        }
+        
+        header h1 {
+            font-family: 'Creepster', cursive;
+            font-size: 4em;
+            color: var(--mystic-gold);
+            margin-bottom: 20px;
+            animation: glow 3s infinite;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            color: var(--ethereal-cyan);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        header p {
+            font-size: 1.3em;
+            color: var(--ghost-white);
+            font-weight: 300;
+        }
+        
+        /* Badge prix choquant */
+        .price-badge {
+            position: absolute;
+            top: -20px;
+            right: 30px;
+            background: var(--warning-red);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            font-weight: bold;
+            transform: rotate(15deg);
+            box-shadow: 0 10px 30px rgba(229, 62, 62, 0.5);
+            animation: pulse 2s infinite;
+            border: 4px solid var(--mystic-gold);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: rotate(15deg) scale(1); }
+            50% { transform: rotate(15deg) scale(1.1); }
+        }
+        
+        /* Sections */
+        section {
+            background: rgba(45, 55, 72, 0.8);
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 15px;
+            border-left: 5px solid var(--ethereal-cyan);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 206, 209, 0.3);
+        }
+        
+        section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: var(--mystic-gold);
+            margin-bottom: 25px;
+            border-bottom: 3px solid var(--cosmic-purple);
+            padding-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        section p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: var(--ghost-white);
+        }
+        
+        /* Listes stylisées */
+        ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        ul li {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: rgba(107, 70, 193, 0.3);
+            border-left: 4px solid var(--mystic-gold);
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+        
+        ul li:hover {
+            background: rgba(107, 70, 193, 0.5);
+            transform: translateX(10px);
+        }
+        
+        ul li::before {
+            content: "👻 ";
+            margin-right: 10px;
+        }
+        
+        /* Section formateurs avec photos */
+        .formateurs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .formateur-card {
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.4) 0%, rgba(139, 0, 139, 0.3) 100%);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid var(--ethereal-cyan);
+            transition: all 0.4s ease;
+        }
+        
+        .formateur-card:hover {
+            transform: scale(1.05) rotate(-2deg);
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.4);
+        }
+        
+        .formateur-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid var(--mystic-gold);
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            filter: sepia(0.3) contrast(1.1);
+        }
+        
+        .formateur-card h4 {
+            font-size: 1.8em;
+            color: var(--mystic-gold);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Témoignages */
+        blockquote {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 5px solid var(--mystic-gold);
+            padding: 25px;
+            margin: 25px 0;
+            font-style: italic;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        blockquote::before {
+            content: "☁️";
+            font-size: 3em;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+        
+        blockquote p {
+            font-size: 1.2em;
+            color: var(--ghost-white);
+            margin-bottom: 15px;
+        }
+        
+        blockquote footer {
+            text-align: right;
+            color: var(--ethereal-cyan);
+            font-weight: 600;
+        }
+        
+        /* Section tarifs */
+        .tarif-box {
+            background: linear-gradient(135deg, var(--warning-red) 0%, #C53030 100%);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 900;
+            margin: 30px 0;
+            box-shadow: 0 15px 50px rgba(229, 62, 62, 0.5);
+            border: 5px solid var(--mystic-gold);
+            animation: pulse 3s infinite;
+        }
+        
+        .cafe-warning {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 20px;
+            border: 2px dashed var(--mystic-gold);
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        /* FAQ stylisée */
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-item strong {
+            color: var(--ethereal-cyan);
+            font-size: 1.3em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, rgba(139, 0, 139, 0.8) 0%, rgba(75, 0, 130, 0.9) 100%);
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid var(--warning-red);
+            margin-top: 50px;
+        }
+        
+        footer p {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--ghost-white);
+        }
+        
+        footer strong {
+            color: var(--mystic-gold);
+            font-size: 1.5em;
+        }
+        
+        footer small {
+            display: block;
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+        }
+        
+        /* Bouton CTA */
+        .cta-button {
+            background: linear-gradient(135deg, var(--mystic-gold) 0%, #FFA500 100%);
+            color: var(--smoke-gray);
+            padding: 20px 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 50px rgba(255, 215, 0, 0.8);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5em; }
+            header h2 { font-size: 1.5em; }
+            .formateurs { grid-template-columns: 1fr; }
+            section { padding: 25px; }
+            .price-badge { font-size: 1em; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Effet de fumée -->
+    <div class="smoke-effect smoke-1"></div>
+    <div class="smoke-effect smoke-2"></div>
+    <div class="smoke-effect smoke-3"></div>
+    <div class="smoke-effect smoke-4"></div>
+    <div class="smoke-effect smoke-5"></div>
+    
+    <!-- Étoiles -->
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <header>
+            <div class="price-badge">870€<br><small style="font-size:0.5em;">sans café!</small></div>
+            <h1>💀 Arrêt du Tabac en 3 Minutes 💀</h1>
+            <h2>Grâce au Contact Défunt Subliminal par Hypnose™</h2>
+            <p><em>La seule méthode qui fonctionne vraiment (probablement)</em></p>
+        </header>
+
+        <section>
+            <h3>🚬 Pourquoi Continuer à Souffrir ?</h3>
+            <p>Vous avez tout essayé : patchs, gommes, acupuncture, même ce livre dont tout le monde parle. Rien n'y fait. C'est normal. Ces méthodes ignorent LA dimension essentielle : <strong>vos ancêtres fumeurs décédés</strong>.</p>
+            
+            <p>Grâce à notre protocole exclusif breveté* (* pas vraiment), nous établissons un pont quantique entre votre inconscient et l'au-delà pour neutraliser définitivement l'addiction nicotinique transgénérationnelle.</p>
+        </section>
+
+        <section>
+            <h3>⚡ Comment Ça Marche ?</h3>
+            <p>Notre méthode révolutionnaire combine :</p>
+            <ul>
+                <li>L'hypnose Ericksono-Elmanienne avancée niveau 47</li>
+                <li>La communication subliminale avec les entités désincarnées</li>
+                <li>Les neurosciences quantiques appliquées</li>
+                <li>Un soupçon de magie (l'ingrédient secret)</li>
+            </ul>
+            
+            <p><strong>Résultat garanti en 3 minutes chrono</strong>, ou nous recommençons gratuitement pendant 2 minutes supplémentaires.</p>
+        </section>
+
+        <section>
+            <h3>🌟 Vos Formateurs d'Exception</h3>
+            <div class="formateurs">
+                <div class="formateur-card">
+                    <img src="https://anna-galley.com/wp-content/uploads/2022/07/anna-galley.jpg" alt="Anna Galley">
+                    <h4>Anna Galley</h4>
+                    <p>Médium hypnotique certifiée par elle-même depuis 2003. Spécialiste reconnue du tabagisme post-mortem et de la réincarnation des filtres.</p>
+                </div>
+                <div class="formateur-card">
+                    <img src="https://www.academie-epione.com/wp-content/uploads/2022/07/JDO_carre2.png" alt="Jérémy Doyen">
+                    <h4>Jérémy Doyen</h4>
+                    <p>Praticien en sciences paranormales appliquées. A arrêté de fumer 47 fois grâce à cette méthode. Détenteur du record mondial de contacts défunts simultanés (12, dont 3 fumeurs).</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>💬 Témoignages</h3>
+            <blockquote>
+                <p>"Incroyable ! Mon arrière-grand-père Marcel m'a dit d'arrêter et j'ai arrêté. Bon, il m'a aussi demandé de retrouver son héritage caché, mais c'est une autre histoire."</p>
+                <footer>— Patricia L., ex-fumeuse depuis jeudi</footer>
+            </blockquote>
+            
+            <blockquote>
+                <p>"Je ne savais même pas que j'avais un oncle fumeur décédé. Maintenant je le connais ET j'ai arrêté de fumer. Double bénéfice !"</p>
+                <footer>— Michel D., libre de nicotine et riche en ancêtres</footer>
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>📋 Informations Pratiques</h3>
+            <p><strong>Durée :</strong> Une matinée intensive (3 heures, dont 3 minutes de formation effective)</p>
+            
+            <div class="tarif-box">
+                870€ la matinée
+            </div>
+            
+            <div class="cafe-warning">
+                <p><em>☕ Le café n'est PAS inclus. Soyons sérieux, à ce prix-là, vous ne pensiez quand même pas qu'on allait vous offrir un expresso ?</em></p>
+            </div>
+            
+            <p><strong>Prérequis :</strong></p>
+            <ul>
+                <li>Avoir au moins un ancêtre fumeur décédé (vérification non requise)</li>
+                <li>Être capable de tenir 3 minutes sans fumer</li>
+                <li>Accepter le contact avec l'au-delà (signature de décharge obligatoire)</li>
+                <li>Apporter votre propre stylo quantique (disponible sur place pour 150€)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🎁 Ce Qui Est Inclus</h3>
+            <ul>
+                <li>Le protocole secret en 247 étapes (dont 244 facultatives)</li>
+                <li>Un certificat d'authenticité délivré par nos soins</li>
+                <li>L'accès à vie au groupe Facebook "Anciens Fumeurs & Défunts Bienveillants"</li>
+                <li>Une plume d'ange énergétisée (ou une plume normale, selon stock)</li>
+                <li>Le support moral de l'équipe pendant toute la matinée</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>❓ Questions Fréquentes</h3>
+            <div class="faq-item">
+                <strong>Et si je n'ai pas d'ancêtre fumeur décédé ?</strong>
+                <p>Nous pouvons vous en prêter un. Supplément de 200€.</p>
+            </div>
+            
+            <div class="faq-item">
+                <strong>Ça marche aussi pour les cigarettes électroniques ?</strong>
+                <p>Les défunts ne connaissent pas la vape. Formation complémentaire nécessaire (450€).</p>
+            </div>
+            
+            <div class="faq-item">
+                <strong>Je peux payer en plusieurs fois ?</strong>
+                <p>Non. Les vibrations de l'argent liquide sont essentielles au processus.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>🔥 Inscriptions ouvertes - Places limitées à 300 personnes 🔥</strong></p>
+            <button class="cta-button">Je veux arrêter maintenant !</button>
+            <p style="margin-top: 30px;"><em>Aucun remboursement n'est possible car l'énergie investie est déjà transmise dans l'éther.</em></p>
+            <small>⚠️ Méthode non validée par aucune autorité médicale, scientifique, spirituelle ou gouvernementale. Les résultats peuvent varier de miraculeux à inexistants. En cas d'échec, c'est probablement votre faute. Les défunts contactés ne sont pas responsables des conseils prodigués. Aucune garantie sur la qualité de la communication avec l'au-delà. Les effets secondaires peuvent inclure : envie de contacter d'autres défunts, fascination pour l'occultisme, questionnement existentiel profond.</small>
+        </footer>
+    </div>
+
+    <script>
+        // Générer des étoiles aléatoires
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+
+</body>
+</html>
